@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500&family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <!-- Sidebar Navigation Button -->
+    <button id="sidebarToggle">☰</button>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebarNav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Focus & Growth</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home" class="rellax" data-rellax-speed="-2">
+        <div id="landing">
+            <div id="profile-section">
+                <div id="profile-pic-container">
+                    <img src="files/profilepic2.jpg" alt="Your Name" id="profile-pic">
+                </div>
+                <div id="about-blurb">
+                    <p>Hello! My name is Ben Maisel and I am a computer science student at Northwestern University.<br> 
+                        I am actively searching for a summer 2024 internship so feel free to download my resume below or shoot me a message on LinkedIn</p>
+                </div>
+            </div>
+        </div>
+    </header>    
+    <a href="https://www.linkedin.com/in/ben-maisel-093a7a240/" target="_blank" class="side-btn left-btn linkedin-btn animate__animated animate__fadeIn" title="Visit my LinkedIn">
+        <div class="icon-container">
+            <i class="fab fa-linkedin fa-7x"></i>
+        </div>
+        <span>LinkedIn</span>
+    </a>
+    
+        
+       
+    </a>    
+    <a href="https://github.com/Ben-Maisel/" target="_blank" class="side-btn right-btn github-btn animate__animated animate__fadeIn" title="Visit my GitHub">
+        <div class="icon-container-git">
+            <i class="fab fa-github fa-7x"></i>
+        </div>
+        <span>GitHub</span>
+    </a>    
+    <div id="landing-container">
+        <a href="#projects" class="projects-btn animate__animated animate__fadeIn" title="My Projects">
+            <i class="fas fa-folder fa-3x"></i>
+            <span>Projects</span>
+        </a>
+    </div>
+    </div>
+        <a href="files/BenMaisel_Resume.pdf" download class="resume-btn">Download My Resume</a>
+    <div>
+    <!-- About Me Section -->
+    <section id="about">
+        <!-- You can add content for the "About Me" section here -->
+        <h2>About Me</h2>
+        <p>
+            Hey there! I’m Ben Maisel, born and raised in the city of Toronto, and now I’m navigating the world of data and code as a computer science student at Northwestern University. My friends describe me as the guy who’s always detail oriented, loves a good challenge, and can adapt to just about anything thrown his way. <br><br>
+
+            What drew me to computer science? It’s simple: I love the thrill of problem-solving — it’s like a complex puzzle where each piece is as intriguing as the next. I’m particularly savvy with Python, SQL, and C, and I’ve got a soft spot for all things data.<br><br>
+
+            When I’m not immersed in code, you might find me paddling through a lake, baking desserts, or racing down a ski slope.<br><br>
+
+            As I’m honing my skills and finishing up my degree, I’m on the lookout for a summer internship where I can bring my passion for data and my love for hands-on learning to the table. I’m ready to dive into new experiences, contribute to meaningful projects, and grow both as a professional and individual.<br><br>
+
+            If you’re looking for someone who brings a thoughtful, analytical approach to your team, coupled with a dash of adventurous spirit, let’s chat. I’m all about making connections that last and finding the right fit for a summer full of growth and learning.<br><br>
+        </p>
+        </p>
+        </p>
+    </section>
+    <!-- Focus & Growth Section -->
+<section id="portfolio">
+    <div class="container">
+        <h2>Focus & Growth</h2>
+        <p>
+            My journey in computer science has been driven by a profound interest in data — how to collect it, understand it, and minipulate it. I've honed my skills in Python, delving into libraries like pandas for data manipulation, numpy for numerical computing, and matplotlib/seaborn for data visualization, along with mastering web scraping with Selenium. SQL and C have also been instrumental in my toolkit, allowing me to handle structured data with precision and delve into system programming for a more foundational understanding of technology. <br><br>
+
+            While I'm currently taking many data science classes at Northwestern University, I believe the real test and testimony of my growth lie in application. I'm eager to break into the industry to not just show my value but to significantly enhance it through real-world challenges and solutions. <br><br>
+        </p>
+        <!-- You can add more content, such as images, lists, or any other relevant information here. -->
+    </div>
+</section>
+<!-- New Projects Section -->
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-container">
+        <!-- Example Project 1 -->
+        <div class="project">
+            <img src="files/photoapp.jpg" alt="Project 1 Thumbnail">
+            <h3>Cloud Based Photo App</h3>
+            <p>Application to upload and download photos. It was built using AWS, SQL, Javascript, Python.</p>
+            <a href="https://github.com/Ben-Maisel/photoapp" target="_blank">View Project</a>
+        </div>
+        <!-- Example Project 2 -->
+        <div class="project">
+            <img src="files/game.jpg" alt="Project 2 Thumbnail">
+            <h3>Scrolling Rhythm Game</h3>
+            <p>An interactive 1 level video game. It was built using C++.</p>
+            <a href="https://github.com/Ben-Maisel/rhythm_game" target="_blank">View Project</a>
+        </div>
+        <!-- Example Project 3 -->
+        <div class="project">
+            <img src="files/Go.jpg" alt="Project 3 Thumbnail">
+            <h3>Mobile Dininghall App</h3>
+            <p>Application that scrapes menus and posts them to mobile device. It was built using Javascript, Python.</p>
+            <a href="https://github.com/Ben-Maisel/dininghall_app" target="_blank">View Project</a>
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        
+        <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:benjaminmaisel@gmail.com">benjaminmaisel@gmail.com</a></li>
+            <li><strong>Phone Number:</strong> 847-910-2512</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ben-maisel-093a7a240/" target="_blank">My LinkedIn</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Ben-Maisel/" target="_blank">My GitHub</a></li>
+        </ul>
+    </div>
+</section>
+
+    
+    
+    
+
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>    
+</body>
+</html>

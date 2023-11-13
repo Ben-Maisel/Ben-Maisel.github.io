@@ -1,0 +1,450 @@
+/* General Styles */
+body {
+    font-family: 'Cormorant Garamond', serif; /* Updated font */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.6; /* Improved line spacing */
+    background-color: #24292e; /* Dark background, similar to GitHub */
+    color: #c9d1d9; /* Light text color for contrast */
+}
+
+header, footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadows */
+}
+
+/* Reset some default browser styles */
+h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #3f454b; /* Slightly lighter shade for the sidebar */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadows */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #c9d1d9; /* Light text for the links */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+nav a:hover {
+    background-color: #5a6169; /* Lighter shade for hover effect */
+}
+
+header {
+    background-color: #2f363d; /* Slightly different shade for distinction */
+    color: #c9d1d9;
+    padding: 60px 0;
+    z-index: 100;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadows */
+    
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #24292e;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadows */
+}
+
+footer {
+    background-color: #3f454b;
+    color: #c9d1d9;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Sidebar Toggle Button */
+#sidebarToggle {
+    background-color: #3f454b;
+    border: none;
+    color: #c9d1d9;
+    font-size: 24px;
+    position: fixed;
+    /* top: 15px; */
+    left: 15px;
+    z-index: 1005; /* Ensure it's above other content */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+    top: 50%;  /* Moves the button to the center vertically */
+    transform: translateY(-50%);  /* Offsets half the height of the button to truly center it */
+    transition: left 0.5s ease; /* This will make the button slide smoothly */
+}
+
+
+/* Sidebar Navigation - Initially hidden */
+#sidebarNav {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide by pushing it out of the viewport */
+    width: 175px;
+    height: 100%;
+    overflow-y: auto;
+    transition: left 0.5s ease; /* Smooth slide-in effect with longer duration */
+    z-index: 1000;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadows */
+}
+
+#sidebarNav ul {
+    list-style-type: none;
+    padding-top: 60px; /* Spacing from the top */
+    display: block; /* This ensures the links stack vertically */
+}
+
+#sidebarNav li {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #c9d1d9; /* Light text for the links */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block; /* This ensures each link takes up a full row */
+    margin: 10px 0; /* Some vertical spacing between links */
+}
+#landing {
+    background-color: #2f363d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-top: -10px;  /* Adjust as needed to position it just below the header */
+}
+
+#landing h1 {
+    font-size: 2rem;
+    margin-top: -10px;
+    color: #c9d1d9;
+}
+
+#landing p {
+    font-size: 1.2rem;
+    margin-top: -5px;
+    color: #868e96; /* Slightly muted color for the subtitle */
+}
+
+
+
+
+#home, #landing {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.projects-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: +50px;
+    z-index: 1002;
+    text-decoration: none; /* removes the underline */
+    color: #c9d1d9; /* sets the default color */
+    /* The transition should be on the main class, not just on hover */
+    transition: transform 0.4s ease-out; 
+}
+
+.projects-btn i {
+    color: #c9d1d9;
+    position: relative;
+    padding: 25px; /* Increase padding around the icon */
+    border-radius: 50%; /* keeps it rounded */
+    transition: background-color 0.3s;
+    font-size: 10rem;  /* Adjust to your preference */
+    /* The transition should be on the main class, not just on hover */
+    transition: transform 0.4s ease-out; 
+}
+
+.projects-btn i:hover {
+    /* background-color: #5a6169; */
+    transform: scale(1.1) rotate(3deg);
+    /* color: #f4f4f4;  slight color shift for emphasis */
+    transition: transform 0.3s, color 0.3s;
+    transition: transform 0.4s ease-out; 
+}
+
+#landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Align children to the center */
+    position: relative;
+}
+
+.projects-btn span {
+    display: block; /* make it block-level so it's on a new line */
+    color: #c9d1d9; /* color to match the icon */
+    margin-top: -12px; /* space between the icon and the text */
+    font-size: 3rem; /* adjust size as needed */
+}
+.linkedin-btn {
+    top: 300%;
+    color: #c9d1d9;
+    padding: 30px; 
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1002;
+    text-decoration: none;
+}
+
+.icon-container {
+    display: inline-block;  /* Ensures that the container acts inline */
+    transition: transform 0.4s ease-out; /* Animation for the icon container */
+}
+
+.linkedin-btn:hover .icon-container {
+    transform: translateY(-2%) scale(1.1) rotate(3deg);
+}
+
+/* .linkedin-btn i {
+    /* The icon doesn't need individual transitions since its container will handle it */
+/* } */ 
+
+.linkedin-btn span {
+    display: block; 
+    color: #c9d1d9; 
+    margin-top: +20px; 
+    font-size: 3rem;
+    /* Removing all hover states from the span as it shouldn't animate */
+}
+
+
+/* Remember, the .left-btn styles position the button to the left of the container. */
+.left-btn {
+    left: 200px;
+    top: 35%; /* Adjust as needed for vertical positioning */
+}
+.github-btn {
+    color: #c9d1d9;
+    /* background-color: #3f454b; GitHub dark color */
+    padding: 30px; /* Additional padding around the icon */
+    border-radius: 50%; /* Makes the button circular */
+    position: absolute; /* Ensures it stays fixed on the page */
+    right: 190px; /* Horizontal position */
+    top: 36%; /* Adjusts for the vertical position */
+    z-index: 1002;
+    text-decoration: none;
+}
+
+.icon-container-git {
+    display: inline-block;  /* Ensures that the container acts inline */
+    transition: transform 0.4s ease-out; /* Animation for the icon container */
+}
+
+.github-btn:hover .icon-container-git {
+    transform: translateY(-2%) scale(1.1) rotate(3deg);
+}
+
+/* .github-btn i {
+    /* The icon itself doesn't need individual transitions since its container will handle it */
+/* } */ 
+
+.github-btn span {
+    display: block; 
+    color: #c9d1d9; 
+    margin-top: +20px; 
+    font-size: 3rem;
+    /* Removing all hover states from the span as it shouldn't animate */
+}
+
+.resume-btn {
+    display: inline-block;
+    background-color: #3f454b; 
+    color: #c9d1d9;
+    font-weight: 600;  /* Gives text a little more weight */
+    padding: 12px 24px;  /* Slightly larger padding */
+    border-radius: 25px;  /* Larger border-radius for rounded ends */
+    text-decoration: none;
+    transition: all 0.3s ease;  /* Applies the transition to all properties */
+    margin-top: 120px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  /* Adds a subtle shadow */
+    letter-spacing: 0.5px;  /* Slight letter spacing for text */
+}
+
+.resume-btn:hover {
+    background-color: #5a6169; 
+    transform: translateY(-2px);  /* Slight move upwards */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);  /* Reduces shadow on hover for a "lifting" effect */
+}
+#profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: -65px;  /* Adjust the value to move the entire section to the desired position */
+}
+
+#profile-pic-container {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: -50px;  /* Adjust the value as necessary to move it up */
+}
+
+#profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: -5px;
+}
+
+#about-blurb {
+    flex-grow: 1;  /* This allows the about-blurb to take up the remaining space after the profile-pic-container width */
+    margin-left: +30px;  /* Adjust the value as needed */
+    font-family: 'AR One Sans', sans-serif;
+}
+
+#about-blurb h1 {
+    margin-top: 0;  /* Remove default margin */
+    margin-bottom: 10px;  /* Space between the name and the description */
+}
+
+#about h2 {
+    text-align: center; /* Center-align the header */
+}
+
+#about-blurb p {
+    margin-top: 0;  /* Remove default margin */
+    color: #c9d1d9;
+    
+}
+#about {
+    margin-top: 50px;
+    padding: 40px 0;
+    background-color: #24292e; /* You can change this */
+    color: #c9d1d9; /* You can change this */
+    text-align: left;
+    margin-left: 55px;
+    
+}
+
+#portfolio h2 {
+    text-align: center; /* Center-align the header */
+}
+
+#portfolio {
+    margin-top: 50px;
+    padding: 40px 0;
+    background-color: #24292e; /* You can change this */
+    color: #c9d1d9; /* You can change this */
+    text-align: left;
+    margin-left: 55px;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Contact Section */
+#contact {
+    background-color: #24292e; /* Light gray, can be adjusted */
+    padding: 40px 0;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact .container {
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    font-size: 18px; /* Adjust as needed */
+}
+
+.contact-list li a {
+    color: #007BFF; /* Standard hyperlink blue, can be adjusted */
+    text-decoration: none;
+}
+
+.contact-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Projects Gallery Styles */
+#projects {
+    padding: 40px 0;
+    background-color: #24292e; /* Matches the site's dark theme */
+    color: #c9d1d9; /* Matches the site's light text color */
+    text-align: center; /* Center aligns the title */
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10px; /* Adds padding on the sides */
+}
+
+.project {
+    width: 300px;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 8px;
+    background: #2f363d; /* A slightly different shade for distinction */
+    color: #c9d1d9;
+    margin: 10px; /* Adds margin around the projects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.project h3 {
+    color: #ffffff; /* Ensures the title stands out */
+    margin: 10px 0; /* Adds space around the title */
+}
+
+.project p {
+    font-size: 0.9rem; /* Slightly smaller font size for the description */
+    color: #c9d1d9; /* Light text for readability */
+}
+
+.project a {
+    text-decoration: none;
+    color: #007BFF; /* Standard link color */
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.project a:hover {
+    color: #58a6ff; /* Lighter blue on hover for visibility */
+    text-decoration: underline;
+}
